@@ -1,0 +1,32 @@
+		
+			//****This software design by VINEET KUMAR****//
+					Any Help 
+				Contact me  8510800127  
+				Email_ID vk93823@gmail.com
+
+					
+		//******* Oracle Table*******//
+	1.  Table   ADMIN1
+	1.  Fields  ADMINID,PASSWORD     with admin or admin123    //Data Type VARCHAR2  
+	
+	2. Table  BOOK
+	2.  Fields  BOOK_ID,BOOK_NAME,AUTHOR,PUBLISHER,QUANTITY  //Data Type VARCHAR2
+	
+	3. Table  ISSUE_BOOK
+	3. Fields BOOK_ID1  , USER_ID1 , ISSUE_DATE1 , RETURN_DATE1  //Data Type VARCHAR2
+	
+	4. Table  LIBRARIAN
+	4. Fields NAMEL,USERIDL,PASSWORDL,EMAILIDL,ADDRESSL,CITYL,CONTACTNOL  //Data Type VARCHAR2
+	
+	5.Table STUDENT1
+	5. Fields USER_ID,USER_NAME,USER_PASSWORD,USER_PHONENO,USER_EMAILID  //Data Type VARCHAR2
+	
+
+
+	      	//*******Connection*******//
+	
+	String system="system";            //user name
+	String systempass="system";   //password
+	
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",system,systempass);  
