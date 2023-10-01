@@ -41,12 +41,12 @@ public class Admin extends JFrame  implements ActionListener
 		WindowUtilities.setNativeLookAndFeel();
 	//setPreferredSize(new Dimension(796,572));
 		try{
-				FileInputStream file3=new  FileInputStream("username.txt");
+				FileInputStream file3=new  FileInputStream("username");
 				byte []by12= new byte[50];
 				file3.read(by12);
 				system= new String(by12,0,50);
 				//System.out.println("2 byte "+user1);
-				FileInputStream file4=new  FileInputStream("password.txt");
+				FileInputStream file4=new  FileInputStream("password");
 				byte []by22= new byte[50];
 				file4.read(by22);
 				systempass= new String(by22,0,50);
